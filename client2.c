@@ -1,3 +1,4 @@
+/* Run this code on another machine */
 #include"header.h"
 
 struct sockaddr_in addr_client;
@@ -6,7 +7,7 @@ int main()
 	int sockfd, con_ret, len_client,count;
 	char buff[BUFSIZ];
 	addr_client.sin_family = AF_INET;	
-	addr_client.sin_port = htons(5026);
+	addr_client.sin_port = htons(5026);                   // change the value after executing code once.
 	addr_client.sin_addr.s_addr = inet_addr("127.0.0.1");	
 	
 	sockfd = socket(AF_INET,SOCK_STREAM,0);
