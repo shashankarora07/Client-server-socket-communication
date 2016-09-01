@@ -1,9 +1,10 @@
+/* Run this server code on pc machine and upto 10 clients could be connected */ 
 #include"header.h"
 
 struct sockaddr_in address,new_address;	
-pthread_t thread[10];
+pthread_t thread[10];                  // Can change the value according to your processor efficency.
 //pthread_attr_t *attr;
-int new_sockfd[10];
+int new_sockfd[10];                    // Can change the value as per your need.
 pthread_attr_t attr;
 void *thread_function(void *);
 int i = 0;
