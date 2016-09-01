@@ -1,3 +1,4 @@
+/* Run this client on Beagle Bone Black */
 #include"header.h"
 
 struct sockaddr_in addr_client;
